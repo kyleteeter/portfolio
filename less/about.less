@@ -1,0 +1,31 @@
+#about {
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
+}
+
+.row {
+    display: flex;
+    padding: 2%;
+    .left-col{
+        width:39%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 2.0rem;
+            font-weight: -100;
+            font-family: 'Lato', sans-serif;
+            color: @text-color;
+            .blue-border-left
+        }
+    
+    }
+    .right-col {
+        width: 59%;
+        p{
+            font-family: sans-serif;
+            color: @text-color;
+            margin: 20px 0;
+        }
+    }
+}
