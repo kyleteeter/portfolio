@@ -1,6 +1,6 @@
 #projects{
    
-    
+   
     .project {
     display: flex;
     width: 80%;
@@ -11,6 +11,10 @@
     margin-bottom: 40px;
     .border-gray;
     .border-shadow-gray(@lightgray);
+    @media @phone {
+        flex-direction: column;
+    }
+   
     
     
     .project-info{
@@ -19,6 +23,9 @@
         justify-content: center;
         align-items: center;
         padding: 40px;
+      
+       
+       
         h3{
             font-family: sans-serif;
             font-weight: 400;
@@ -33,8 +40,14 @@
         background-color: lightblue;
         height: 200px;
         width: 200px;
+        @media @phone {
+            width: 100%;
+            height: 300px;
+        }
+                
     }
     
     }
 
 }
+

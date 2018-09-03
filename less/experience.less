@@ -17,13 +17,21 @@
     flex-direction: column;
     max-width: 800px;
     margin-left: 30%;
-    
+    @media @phone {
+        margin: 0 auto;
+        padding: 15px;
+    }
     div{
         background-color: white;
         padding: 20px;
         margin: 20px;
         .border-gray;
         .border-shadow-gray(@lightgray);
+        @media @phone {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+        }
         h3{
             font-size: 1.6rem;
             padding: 10px 0;

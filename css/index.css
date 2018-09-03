@@ -236,6 +236,11 @@ header #mobile-menu ul li a {
   display: flex;
   padding: 2%;
 }
+@media (max-width:500px) {
+  .row {
+    flex-direction: column;
+  }
+}
 .row .left-col {
   width: 39%;
   display: flex;
@@ -250,6 +255,11 @@ header #mobile-menu ul li a {
   border-bottom: 2px solid #3498db;
   padding-bottom: 3px;
 }
+@media (max-width:500px) {
+  .row .left-col {
+    width: 90%;
+  }
+}
 .row .right-col {
   width: 59%;
 }
@@ -257,6 +267,11 @@ header #mobile-menu ul li a {
   font-family: sans-serif;
   color: #74808a;
   margin: 20px 0;
+}
+@media (max-width:500px) {
+  .row .right-col {
+    width: 90%;
+  }
 }
 .background-alt {
   display: flex;
@@ -278,12 +293,25 @@ header #mobile-menu ul li a {
   max-width: 800px;
   margin-left: 30%;
 }
+@media (max-width:500px) {
+  #experience-timeline {
+    margin: 0 auto;
+    padding: 15px;
+  }
+}
 #experience-timeline div {
   background-color: white;
   padding: 20px;
   margin: 20px;
   border: 1px solid #dbd8d8;
   box-shadow: 0px 3px 10px 0px #74808a;
+}
+@media (max-width:500px) {
+  #experience-timeline div {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+  }
 }
 #experience-timeline div h3 {
   font-size: 1.6rem;
@@ -357,6 +385,11 @@ header #mobile-menu ul li a {
   border: 1px solid #dbd8d8;
   box-shadow: 0px 3px 10px 0px #74808a;
 }
+@media (max-width:500px) {
+  #projects .project {
+    flex-direction: column;
+  }
+}
 #projects .project .project-info {
   display: flex;
   flex-direction: column;
@@ -377,6 +410,12 @@ header #mobile-menu ul li a {
   background-color: lightblue;
   height: 200px;
   width: 200px;
+}
+@media (max-width:500px) {
+  #projects .project img {
+    width: 100%;
+    height: 300px;
+  }
 }
 #skills {
   display: flex;
