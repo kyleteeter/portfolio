@@ -330,6 +330,7 @@ header #mobile-menu ul li a {
 }
 #experience-timeline div p {
   font-size: 1 rem;
+  margin: 20px;
 }
 #education {
   display: flex;
