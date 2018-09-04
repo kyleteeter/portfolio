@@ -10,5 +10,5 @@ Font Awesome
 # Things to be added
 More interactivity will be added in the future like a drop down navigation using JavaScript.
 
-#LIVE WEBSITE
-See the live site [HERE](https://kyleteeter.github.io/portfolio/index.html)
+# LIVE WEBSITE
+See the live site [HERE](https://kyleteeter.github.io/portfolio/)
