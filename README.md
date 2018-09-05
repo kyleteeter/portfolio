@@ -1,5 +1,5 @@
 # Portfolio
-This is a lightweight portfolio site display resume information and projects.
+This is a lightweight portfolio site to display resume information and projects.
 
 # Technologies Used
 HTML
