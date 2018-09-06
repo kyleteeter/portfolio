@@ -165,30 +165,38 @@ header #mobile-menu ul li a {
 #head {
   position: relative;
   margin-top: -45px;
-  z-index: -1;
   width: 100%;
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
   background-image: url(../images/minneapolis.jpg);
   background-size: cover;
+  z-index: -2;
 }
-#head .layer-color {
+#layer-color {
   background-color: rgba(9, 156, 228, 0.85);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
-#head .layer-color #head-content {
+.layer-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.layer-position #head-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40vh;
 }
-#head .layer-color #head-content h1 {
+.layer-position #head-content h1 {
   padding: 20px;
   color: #FFFFFF;
   font-size: 5rem;
@@ -197,16 +205,16 @@ header #mobile-menu ul li a {
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.48);
 }
 @media (max-width:610px) {
-  #head .layer-color #head-content h1 {
+  .layer-position #head-content h1 {
     font-size: 4rem;
   }
 }
 @media (max-width:500px) {
-  #head .layer-color #head-content h1 {
+  .layer-position #head-content h1 {
     font-size: 3rem;
   }
 }
-#head .layer-color #head-content h2 {
+.layer-position #head-content h2 {
   color: rgba(235, 239, 241, 0.69);
   font-size: 3rem;
   font-weight: 400;
@@ -214,12 +222,13 @@ header #mobile-menu ul li a {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 @media (max-width:500px) {
-  #head .layer-color #head-content h2 {
+  .layer-position #head-content h2 {
     font-size: 2.5rem;
   }
 }
-#head .layer-color #head-content a {
+.layer-position #head-content a {
   margin: 20px;
+  cursor: pointer;
   font-size: 1.1rem;
   text-decoration: none;
   color: white;
