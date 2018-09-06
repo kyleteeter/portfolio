@@ -182,21 +182,26 @@ header #mobile-menu ul li a {
   height: 100%;
   z-index: -1;
 }
-.layer-position {
+#head-content {
   position: absolute;
-  top: 0;
+  top: 46px;
   left: 0;
   width: 100%;
-  height: 100%;
-}
-.layer-position #head-content {
+  height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40vh;
+  margin-top: 10vh;
 }
-.layer-position #head-content h1 {
+@media (max-width:500px) {
+  #head-content {
+    top: 114px;
+    margin-top: 0;
+  }
+}
+#head-content h1 {
   padding: 20px;
   color: #FFFFFF;
   font-size: 5rem;
@@ -205,16 +210,16 @@ header #mobile-menu ul li a {
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.48);
 }
 @media (max-width:610px) {
-  .layer-position #head-content h1 {
+  #head-content h1 {
     font-size: 4rem;
   }
 }
 @media (max-width:500px) {
-  .layer-position #head-content h1 {
-    font-size: 3rem;
+  #head-content h1 {
+    font-size: 2.2rem;
   }
 }
-.layer-position #head-content h2 {
+#head-content h2 {
   color: rgba(235, 239, 241, 0.69);
   font-size: 3rem;
   font-weight: 400;
@@ -222,11 +227,11 @@ header #mobile-menu ul li a {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 @media (max-width:500px) {
-  .layer-position #head-content h2 {
-    font-size: 2.5rem;
+  #head-content h2 {
+    font-size: 1.5rem;
   }
 }
-.layer-position #head-content a {
+#head-content a {
   margin: 20px;
   cursor: pointer;
   font-size: 1.1rem;
@@ -236,6 +241,11 @@ header #mobile-menu ul li a {
   padding: 20px;
   border-radius: 30px;
   font-family: sans-serif;
+}
+@media (max-width:500px) {
+  #head-content a {
+    font-size: 0.9rem;
+  }
 }
 #about {
   border-top: 1px solid #dbd8d8;

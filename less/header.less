@@ -18,20 +18,26 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    
 }
-.layer-position {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
         
     #head-content {
+        position: absolute;
+        top: 46px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 40vh;
+        margin-top: 10vh;
+        @media @phone {
+            top: 114px;
+            margin-top: 0;
+            }
         h1 {
             padding: 20px;
             color: @white;
@@ -43,7 +49,8 @@
                 font-size: 4.0rem;
                 }
             @media @phone {
-                font-size: 3.0rem;
+                font-size: 2.2rem;
+                
                 }
             }
         h2{
@@ -53,7 +60,7 @@
             font-family: sans-serif;
             text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             @media @phone {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 }
             }
         a {
@@ -66,8 +73,11 @@
             padding: 20px;
             border-radius: 30px;
             font-family: sans-serif;
+            @media @phone {
+                font-size: 0.9rem;
+                }
             }
         }
-    }
+    
 
 
